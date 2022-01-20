@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-color: #f2f2f2;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home {
+    background-color: royalblue;
+}
+#about {
+    background-color: aquamarine;
+}
+#contact {
+    background-color: dodgerblue;
+}
+#footer {
+    background-color: crimson;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+nav .container {
+
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+
+nav .container ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+}
+
+nav .container ul li a{
+    
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+nav .container ul li.active{
+    background-color: crimson;
+    transition: 0.3 ease background-color;
+}
+nav .container ul li.active a{
+    color: white;
+}
